@@ -91,8 +91,30 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 - A dropout layer with prob=0.5
 - A final layer of 1 neuron that outputs the steering angle. 
 
+Model visualization:
+
+![Final Model](images/model.png "Model description")
+
+
 #### 3. Creation of the Training Set & Training Process
 
 Initially, I thought I could create good training data on my own by following the recommendation: two middle of the road, and a few left/right recovery lap. I spent a few days driving the track but unable to generate a training set that is good enough to train a model. 
 
 Then I went back to the project website and learnt that it's almost impossible to generate a training data without a joystick. So at this point I decide that use the provided data.zip. Then I implemented all augmentation and preprocessing steps. In the end, it worked out. 
+
+The training data is cropped top and bottom, then flipped. Examples of training data:
+
+Center camera image and its flip:
+
+![Center camera](examples/center_2016_12_01_13_30_48_287_crop.jpg "original")
+![Center camera](examples/center_2016_12_01_13_30_48_287_flip.jpg "flip")
+
+Left camera image and its flip:
+
+![Center camera](examples/left_2016_12_01_13_30_48_287_crop.jpg "original")
+![Center camera](examples/left_2016_12_01_13_30_48_287_flip.jpg "flip")
+
+Right camera image and its flip:
+
+![Center camera](examples/right_2016_12_01_13_30_48_287_crop.jpg "original")
+![Center camera](examples/right_2016_12_01_13_30_48_287_flip.jpg "flip")
