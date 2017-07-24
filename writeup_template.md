@@ -51,15 +51,15 @@ The model.py file contains the code for training and saving the convolution neur
 The basic of my model is LeNet with additional normalization layer, cropping layer and dropout layer.
 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually.
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 I believe the training data plays the major role in this exercises. I employed all the data augmentation suggestions in the project resources. I use three cameras, image flipping, image cropping and image normalization.
 
@@ -80,7 +80,7 @@ I followed all suggestions from the project resources:
 
 Then I trained the model for 20 epoch and the vehicle is able to drive around the track without leaving the road.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers:
 - A Cropping layer to crop the top of input images.
