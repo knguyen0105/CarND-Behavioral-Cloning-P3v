@@ -93,7 +93,7 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 
 Model visualization:
 
-![Final Model](images/model.png "Model description")
+![Final Model](examples/model.png "Model description")
 
 
 #### 3. Creation of the Training Set & Training Process
